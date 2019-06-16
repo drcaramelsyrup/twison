@@ -1,11 +1,9 @@
 var expect = require('chai').expect;
 var fs = require('fs');
-var jsdom = require('mocha-jsdom');
 
 var story;
 
 describe("Converting to JSON", function() {
-  jsdom();
 
   it("should generate the correct JSON", function() {
     var storyData = fs.readFileSync("fixture.html", "utf-8");
